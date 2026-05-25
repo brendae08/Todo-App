@@ -1,0 +1,101 @@
+Author: Brenda Ebba
+File name: Notes2.txt
+Represents: Notes for testing for part 2 of the project
+
+
+
+
+Testing for Part 2 of the project consisted of entering different commands, and making sure they functioned correctly.
+
+Test 1: Basic commands(test1.txt):
+	
+	Tested create, cat, ls, rm, and exit. Created a file, printed its contents, listed the directory, and removed the file to make sure the basic commands worked.
+
+	Ex: 
+
+	create hello.txt
+	Hello World~
+	ls
+	cat hello.txt
+	rm hello.txt
+	ls
+
+	
+
+
+
+Test 2: mkdir, cd, pwd (test2.txt):
+	
+	Tested mkdir, cd, pwd, cd .., and cd /. Created directories, navigated into them, printed the current path, adn navigated back to make sure directory navigation worked.
+
+	Ex: 
+
+	mkdir users
+	cd users
+	pwd 
+	cd ..
+	pwd
+	cd /
+	pwd
+
+
+
+Test 3: du recursive (test3.txt):
+	
+	Tested du by createing files in multiple subdirectories. Makde sure du was adding up the file sizes recursively through all subdirectories and not just the current one.
+
+	Ex:
+
+	mkdir folder1
+	cd folder1
+	create file1.txt
+	hello~
+	cd ..
+	du
+
+
+Test 4: find (test4.txt):
+	
+	Tested find by creating filed whith the same name in different directories. Made sure find was only printing the path of the file in teh curren tdirectory and its children, not from the root.
+
+	Ex:
+
+	mkdir CS112
+	cd CS112
+	create grades.txt
+	some content~
+	cd /
+	mkdir CS221
+	cd CS221
+	create grades.txt
+	other content~
+	cd CS112
+	find grades.txt
+
+
+Test 5: Error checking (test5.txt):
+	
+	Tested all error messages by running ocmmands with missing arguments, duplicate names, invalid directory names, and unknown commands to make sure all errors were handled correctly.
+
+	Ex: 
+
+	mkdir programs
+	cd programs
+	mkdir Java
+	cd /programs/Java
+	pwd
+
+
+Test 6: 
+	
+	Tested cd with full path and .. in teh middle of a path to make sure cd could handle more complex pathways. 
+
+Personal Testing:
+	
+	For personal testing I also spoke to Sara (TA) and modified ceratin aspects that she guided me with. Helped me with my structure and remaking methods in the main so that my program wasn't too long, which really helped with reading.
+
+How my program did for testing:
+	
+	Honestly the issues I went through with testing was, pathways, closing curly brackets, loops, and cd.., and having the correct recursive calls. These were my biggest issues for testing and looking through and analyzing my code to fix. Other than that testing was very straigh forward and worked. Overall this project took me each day to finish since we first got it, but its a very useful project that I most definelty will be using to help with my outline for summer projects. 
+
+

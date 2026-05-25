@@ -1,0 +1,11 @@
+login
+bet1:499:1:0:4D:5H:up:5H:9H 
+bet2:498:3:0:4D:4H:4S:up:5H:8D:9H:4H   
+status:lose:8H:9H:4H
+bet1:496:2:0:4H:JC:up:8D:JC    
+bet2:495:3:0:4H:JC:6S:up:JC:6S  
+status:win:4H:JC:6S
+status:win:4H:JC:6S
+bet1:497:2:0:8D:JS:up:JS:2D
+bet1:496:14:10:8D:JS:
+done:well done
