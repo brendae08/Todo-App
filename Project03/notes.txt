@@ -1,0 +1,72 @@
+//Author: Brenda Ebba
+//Course: CS-112-02
+//Date: 5/4/26
+//File name: Notes.txt:
+//Represents: A description of my testing for FileSys.java
+
+	For the testing portion in Part 1 of Project03. I tested FileSys.java by going through all of my commands, and gave both valid and invalid inputs, to make sure that they would run correctly. This allowed me to make sure that all of my commands were both receiving and outputting the correct information depending on what the user enters into the terminal.
+
+File name Required Testing:
+
+	For the commands that required a file name which were “create”, “cat”,and  “rm”. I tested my program  by just inputting the command, and if there was no file found then the program outputs “ERROR: file name required” giving me the error and the reasoning behind the error. For example:
+
+	prompt> create
+	ERROR: file name required
+	prompt> create myFile.txt
+	prompt> cat
+	ERROR: file name required
+	prompt> cat myFile.txt
+	prompt> rm
+	ERROR: file name required
+	prompt> rm myFile.txt
+
+
+Directory name required:
+
+	Next, for the commands that required a directory name which included “mkdir”, “rmdir”, “cd”, and “find”. I tested my program by just inputting the commands, again similar to the previous testing and if there was no directory name found then the program outputs ”ERROR: directory name required”.  For example:
+	prompt> mkdir
+
+	ERROR: directory name required
+	prompt> mkdir myFolder
+	prompt> rmdir
+	ERROR: directory name required
+	prompt> rmdir myFolder
+	prompt> cd
+	ERROR: directory name required
+	prompt> cd CS112
+	prompt> find
+	ERROR: directory name required
+	prompt> find CS112
+
+Commands that don’t require a file/directory name:
+
+	For the file that did not require a file nor a directory name. I tested my program by just simply running the command, and if the input was valid then it would continue on to the next prompt solemnly for part 1 of Project03. However if there was an invalid command given the program will print “ERROR: unknown command”, following with the invalid command. For example: 
+
+	prompt> ls
+	prompt> du
+	prompt> pwd
+	prompt> code
+	ERROR: unknown command code'
+	prompt>
+
+Exit Testing:
+
+	For the exit testing, it was quite simple. I just typed exit into my program, making sure that the program stops prompting after the user enters “exit”. For example: 
+
+	prompt> exit
+	PS C:\Users\brend\onedrive\desktop\cs112\Mywork\Project03>
+
+Unknown Command Testing:
+
+	For testing this case. If the user inputs an invalid command the program should print “ERROR: unknown command” with the following invalid command given. For example:
+
+	PS C:\Users\brend\onedrive\desktop\cs112\mywork\project03> java FileSys
+	prompt> cD
+	ERROR: unknown command cD'
+	prompt>
+
+
+
+	
+
+
